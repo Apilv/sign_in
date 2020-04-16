@@ -1,22 +1,39 @@
-body{
-    background-color: #00AFCA;
-}
+
 
 .container {
     width: 800px;
     margin-top: 100px;
-    margin-left: calc( 50% - 300px );
+    margin-left: calc( 50% - 400px );
+    position: relative;
 }
-.left{
+    .container > .left{
+    background-image: url('../img/main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: purple;
     width: 40%;
     float: left;
-    background-color: #5780D9;
-}
+    color: #ffffff;
+
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    }
+
     .left > h1{
+        width: 100%;
+        padding: 20px;
     }
     .left > .links{
+        width: 100%;
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
     .left > .links > a{
+        color: #ffffff;
     }
     .left > .links > span{
     }
@@ -26,7 +43,7 @@ body{
 .right{
     width: 60%;
     padding: 60px;
-    float: left;
+    float: right;
     box-sizing: border-box;
     background-color: #ffffff;
     position: relative;
@@ -61,7 +78,6 @@ form{
         font-size: 15px;
         line-height: 20px;
         text-transform: uppercase;
-        out
     }
     form > .form-row > input{
         width: 100%;
